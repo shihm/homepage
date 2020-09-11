@@ -1,0 +1,38 @@
+.top{
+    padding: 20px;
+    text-align: center;
+}
+.photo{
+    display: flex;
+    max-width: 800px;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+}
+.photo table{
+    line-height: 20px;
+    margin-left: 20px;
+}
+@media screen and (max-width: 800px){
+    .photo{
+        display: flex;
+        flex-direction: column;
+    }.photo img{
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+    .photo table{
+        line-height: 20px;
+        margin: auto;
+    }
+}
+.navs{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    padding:20px 0;
+}
