@@ -1,7 +1,6 @@
 
-
 function showProject() {
-
+    
 }
 function showCV() {
     var ajax = new XMLHttpRequest();
