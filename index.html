@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid contents">
         <div class="top container-fluid">
             <h1>Hazel Shi</h1>
             <h5>A Software Developer and Tester for Hire</h5>
@@ -45,14 +45,33 @@
                 </tbody>
             </table>
         </div>
-        <div class="navs">
-            <div onclick="showProject()">Projects</div>
-            <div onclick="showSkill()">Skills</div>
-            <div onclick="showCV()">CV</div>
-        </div>
-        <div id='contents'></div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="true">project</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="CV-tab" data-toggle="tab" href="#CV" role="tab" aria-controls="CV" aria-selected="false">CV</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">skills</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="project" role="tabpanel" aria-labelledby="project-tab">
+                <div class="nav" style="margin: 20px 0;">
+                    <a href="https://shihm.github.io/bfs/">Broad first search</a>
+                    <a href="https://shihm.github.io/gameLife/">Conway's Game of Life</a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="CV" role="tabpanel" aria-labelledby="CV-tab">
+                <embed src="HShi.pdf" width="800px" height="2100px" />
+            </div>
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                Front-end1
+            </div>
+          </div>
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -66,6 +85,6 @@
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
 
-    </body>
+</body>
 
-</html >
+</html>

@@ -28,11 +28,14 @@
         margin: auto;
     }
 }
-.navs{
+.nav{
     max-width: 800px;
     display: flex;
     justify-content: space-around;
     margin: auto;
     align-items: center;
-    padding:20px 0;
+}
+.contents{
+    max-width:800px;
+    margin:auto;
 }
